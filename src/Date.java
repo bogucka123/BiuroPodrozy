@@ -19,8 +19,7 @@ public class Date {
     }
 
     public String toString() {
-        return day + "." + month + "." + year
-                + " " + hour + ":" + minute;
+        return day + "." + month + "." + year + " " + hour + ":" + minute;
     }
 
     public int getYear() { return year; }

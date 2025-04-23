@@ -33,10 +33,6 @@ public class Trip {
     }
 
     public String toString() {
-        return "Wycieczka: " + description
-                + "\nPoczątek: " + startDate
-                + "\nKoniec: " + endDate
-                + "\nData zakupu: " + purchaseDate
-                + "\nStatus: " + getStatus();
+        return "Wycieczka: " + description + "\nPoczątek: " + startDate + "\nKoniec: " + endDate + "\nData zakupu: " + purchaseDate + "\nStatus: " + getStatus();
     }
 }

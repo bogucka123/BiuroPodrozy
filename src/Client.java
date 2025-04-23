@@ -22,11 +22,7 @@ public class Client {
     }
 
     public String toString() {
-        String info = "Klient: " + name + " " + surname
-                + "\nData urodzenia: " + birthDate
-                + "\nEmail: " + email
-                + "\nPesel: " + pesel
-                + "\nAdres: " + adress;
+        String info = "Klient: " + name + " " + surname + "\nData urodzenia: " + birthDate + "\nEmail: " + email + "\nPesel: " + pesel + "\nAdres: " + adress;
         if (guardian != null) {
             info += "\nOpiekun: " + guardian.name + " " + guardian.surname;
         }
