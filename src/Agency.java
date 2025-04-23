@@ -1,17 +1,31 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Agency {
+    private List<Client> clients = new ArrayList<>();
+    private List<Trip> trips = new ArrayList<>();
 
-    private Client[] clients;
-    public Agency()
-    {
+    public void addClient(Client client) {
+        clients.add(client);
+    }
 
+    public void addTrip(Trip trip) {
+        trips.add(trip);
     }
-    public void handleClientDataCollection()
-    {
-        System.out.println("Wpisz dane klienta");
-        System.out.print("Imie: ");
+
+    public void showTrips() {
+        for (Trip t : trips) {
+            System.out.println(t + "\n");
+        }
     }
-    public void handleClientCreation(String name, String surname, String email, String pesel, Adress adress)
-    {
-        Client client = new Client(name, surname, email, pesel, adress);
+
+    public void showClients() {
+        for (Client c : clients) {
+            System.out.println(c + "\n");
+        }
+    }
+
+    public String toString() {
+        return "To biuro wycieczkowe ma " + clients.size() + " klientów i " + trips.size() + " wycieczek.";
     }
 }
